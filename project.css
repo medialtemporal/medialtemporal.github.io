@@ -169,3 +169,9 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
 #about-on-about {
     color:var(--less-pale-pink)
 }
+
+#temp {
+    padding-left: 25%;
+    padding-right: 0%;
+    padding-top: 150px;
+}
