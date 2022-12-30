@@ -1,0 +1,171 @@
+:root{
+    --pale-pink: #EAC8D8;
+    --less-pale-pink: #e985b4;
+    --pale-purple: #C5B2D1;
+    --lilac: #94A0C6;
+}
+
+::selection {
+    background: var(--pale-purple);
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+
+body {
+    height: 100%;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0;
+    max-width: 100%;
+}
+
+/* Heading 1 */
+h1 {
+    color: var(--less-pale-pink);
+    margin: auto;
+    padding-right: 20%;
+    font-style: bold;
+    font-size: 32px;
+    text-align: left;
+}
+
+/* Heading 2 */
+h2 {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/* Heading 3 */
+h3 {
+    font-weight: bolder;
+    font-style: bold;
+    font-size: 20px;
+}
+
+p {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+/* Gets rid of the underline for links */
+nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
+    border:0;
+    outline:none;
+    text-decoration:none;
+}
+
+/* Navigation bar div (background/format) */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition:top 0.3s;
+    box-shadow: 0px 0px 15px 0px var(--pale-pink);
+    background-color: white;
+    color: var(--pale-pink);
+}
+
+/* Specifically the nav bar LINKS (a elements) */
+.nav-link {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 26px;
+    list-style-type: none;
+    color: var(--pale-pink);
+
+    text-align: right;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--less-pale-pink);
+}
+
+
+/* List of links (ul element) */ 
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 25%;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+/* Navbar name and Title class */ 
+.navbar-name, .title {
+    color: var(--less-pale-pink);
+    letter-spacing:2px;
+}
+
+.navbar-name {
+    float: left;
+    padding-left: 25%;
+    pointer-events: none;
+}
+
+/* Nav bar title and links */
+.nav a {
+    display: inline;
+    text-align: justify;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--pale-pink);
+}
+
+
+/* Site intro */
+.hello {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.title, .description, .contact {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.email {
+    color: var(--pale-pink);
+}
+
+#projects, #awards, #skills, .return {
+    padding-top: 50px;
+}
+
+.projectcats:hover {
+    background: var(--pale-pink);
+}
+
+.date {
+    color: var(--pale-pink);
+}
+
+.description a, .return a {
+    text-decoration: none;
+    color: var(--less-pale-pink);
+}
+
+.description a:hover, .return a:hover {
+    color:var(--pale-pink)
+}
+
+#about-on-about {
+    color:var(--less-pale-pink)
+}
