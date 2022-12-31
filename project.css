@@ -1,6 +1,6 @@
 :root{
-    --light-text: #999999; /* #EAC8D8 */
-    --less-light-text: black; /* #e985b4 */
+    --light-text: #999999; 
+    --less-light-text: black; 
     --pale-purple: #C5B2D1;
     --text-colour: #343434;
 }
