@@ -1,6 +1,6 @@
 :root{
-    --light-text: #999999; 
-    --less-light-text: black; 
+    --light-text: #999999; /* #EAC8D8 */
+    --less-light-text: black; /* #e985b4 */
     --pale-purple: #C5B2D1;
     --text-colour: #343434;
 }
@@ -169,12 +169,6 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
     text-decoration: underline;
 }
 
-#temp {
-    padding-left: 25%;
-    padding-right: 0%;
-    padding-top: 150px;
-}
-
 .contact {
     display: flex;
     justify-content: left;
@@ -184,4 +178,57 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
 
 .contact a {
     margin-right: 25px;
+}
+
+/* For projects.html */
+
+#writing {
+    padding-top: 110px;
+}
+
+#writing, #coding, #center {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.above-collapse {
+    padding-bottom: 20px;
+}
+
+
+.collapsible, .collapsible2, .collapsible3, .collapsible4, .collapsible5, .collapsible6 {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+}
+  
+.container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 25%;
+    padding-right: 25%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.active, .collapsible:hover, .collapsible2:hover, .collapsible3:hover, .collapsible4:hover, .collapsible5:hover, .collapsible6:hover {
+    background-color: var(--light-text);
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 10px;
+}
+
+.content a {
+    text-decoration: none;
+    color: var(--light-text);
+}
+
+.content a:hover {
+    color: black;
 }
