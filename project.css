@@ -4,10 +4,11 @@
     --selection: #8a928f;
     --text-colour: #e3ebe7;
     --background-colour: #0d251c;
+    --test: #c9a648;
 }
 
 ::selection {
-    background: var(--selection);
+    background: var(--test);
 }
 
 * {
@@ -21,7 +22,6 @@ html {
     overflow-x: hidden;
 
 }
-
 
 body {
     height: 100%;
@@ -37,14 +37,14 @@ h1 {
     margin: auto;
     padding-right: 20%;
     font-style: bold;
-    font-size: 26px;
+    font-size: 28px;
     text-align: left;
 }
 
 /* Heading 2 */
 h2 {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 24px;
     color: var(--less-light-text);
 }
 
@@ -80,13 +80,13 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
     position: fixed;
     top: 0;
     transition:top 0.3s;
-    box-shadow: 0px 0px 15px 0px var(--light-text);
+    box-shadow: 0px 0px 30px 0px var(--test);
     background-color: var(--background-colour);
 }
 
 /* Specifically the nav bar LINKS (a elements) */
 .nav-link {
-    font-size: 22px;
+    font-size: 24px;
     list-style-type: none;
     color: var(--light-text);
     font-weight: bold;
@@ -110,8 +110,8 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
 }
 
 /* Navbar name and Title class */ 
-.navbar-name, .title {
-    color: var(--less-light-text);
+.navbar-name h2 {
+    color: var(--test);
 }
 
 .navbar-name {
@@ -153,7 +153,7 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
 }
 
 .email:hover {
-    color: var(--less-light-text);
+    color: var(--test);
 }
 
 #awards, #skills, .return {
@@ -165,7 +165,7 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
 }
 
 .date {
-    color: var(--light-text);
+    color: var(--test);
 }
 
 .description a, .return a {
@@ -174,7 +174,7 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
 }
 
 .description a:hover, .return a:hover {
-    color:var(--light-text)
+    color:var(--test);
 }
 
 #about-on-about, .nav-link:hover {
@@ -208,9 +208,107 @@ a {
 }
 
 a:hover {
-    color: var(--selection);
+    color: var(--test);
 }
 
 .above-collapse {
     padding-bottom: 20px;
+}
+
+@media screen and (max-width: 850px) { /* for mobile or small screens */
+    * {
+        text-align: left;
+    }
+    
+    #pfp {
+        visibility: hidden;
+    }
+
+    .hello {
+        padding-left: 25%;
+        padding-right: 0%;
+        padding-top: 120px;
+    }
+
+    .links {
+        margin: 0;
+        padding-top: 0px;
+        padding-right: 25%;
+        padding-left: 25%;
+        padding-bottom: 15px;
+        
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    .navbar-name {
+        padding-left: 39%;
+    }
+
+    #top {
+        font-size: 30px;
+    }
+
+    .hello {
+        padding-top: 160px;
+    }
+
+    #writing {
+        padding-top: 180px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-name {
+        padding-left: 38%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .navbar-name {
+        padding-left: 37%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-name {
+        padding-left: 36%;
+    }
+
+    p, .hello, .title, .description {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #hi {
+        padding-right: 0%;
+        margin-right: 0%;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .navbar-name {
+        padding-left: 35%;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    .navbar-name {
+        padding-left: 34%;
+    }
+}
+
+@media screen and (max-width: 550px) { 
+    .navbar-name {
+        padding-left: 33%;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    .navbar-name {
+        padding-left: 32%;
+    }
 }
