@@ -1,16 +1,18 @@
 :root{
-    --light-text: #999999; /* #EAC8D8 */
-    --less-light-text: black; /* #e985b4 */
-    --pale-purple: #C5B2D1;
-    --text-colour: #343434;
+    --light-text: #b5b5b5; /* Nav bar, award italics, etc. */
+    --less-light-text: #e4e4e4; 
+    --selection: #8a928f;
+    --text-colour: #e3ebe7;
+    --background-colour: #0d251c;
 }
 
 ::selection {
-    background: var(--pale-purple);
+    background: var(--selection);
 }
 
 * {
     font-family: 'Montserrat', sans-serif;
+    background-color: 	var(--background-colour);
 }
 
 html {
@@ -43,6 +45,7 @@ h1 {
 h2 {
     font-weight: bold;
     font-size: 22px;
+    color: var(--less-light-text);
 }
 
 /* Heading 3 */
@@ -50,13 +53,18 @@ h3 {
     font-weight: bolder;
     font-style: bold;
     font-size: 18px;
+    color: var(--less-light-text);
+}
+
+h1, h2, h3 {
+    font-family: 'Platypi', serif;
 }
 
 p {
     padding-left: 25%;
     padding-right: 25%;
     color: var(--text-colour);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Gets rid of the underline for links */
@@ -73,8 +81,7 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
     top: 0;
     transition:top 0.3s;
     box-shadow: 0px 0px 15px 0px var(--light-text);
-    background-color: white;
-    color: var(--light-text);
+    background-color: var(--background-colour);
 }
 
 /* Specifically the nav bar LINKS (a elements) */
@@ -86,6 +93,7 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
     text-align: right;
     padding-left: 35px;
     text-decoration: none;
+    font-family: 'Platypi', 'serif';
 }
 
 
@@ -131,6 +139,10 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
     grid-template-columns: 3fr 1fr;
 }
 
+#pfp {
+    border-radius: 50%;
+}
+
 .title, .description, .contact {
     padding-left: 25%;
     padding-right: 25%;
@@ -144,12 +156,12 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
     color: var(--less-light-text);
 }
 
-#projects, #awards, #skills, .return {
+#awards, #skills, .return {
     padding-top: 50px;
 }
 
-.projectcats:hover {
-    background: var(--light-text);
+#about,  #awards, #skills, #hi, #writing, #coding {
+    color:#ffffff;
 }
 
 .date {
@@ -183,52 +195,18 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
 /* For projects.html */
 
 #writing {
-    padding-top: 110px;
+    padding-top: 140px;
 }
 
-#writing, #coding, #center {
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 40px;
+strong {
+    color: var(--less-light-text);
 }
 
-.above-collapse {
-    padding-bottom: 20px;
-}
-
-
-.collapsible, .collapsible2, .collapsible3, .collapsible4, .collapsible5, .collapsible6 {
-    cursor: pointer;
-    border: none;
-    padding: 10px;
-}
-  
-.container {
-    display: flex;
-    flex-direction: row;
-    padding-left: 25%;
-    padding-right: 25%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.active, .collapsible:hover, .collapsible2:hover, .collapsible3:hover, .collapsible4:hover, .collapsible5:hover, .collapsible6:hover {
-    background-color: var(--light-text);
-}
-
-.content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    margin-bottom: 10px;
-}
-
-.content a {
+a {
+    color: white;
     text-decoration: none;
-    color: var(--light-text);
 }
 
-.content a:hover {
-    color: black;
+a:hover {
+    color: var(--selection);
 }
