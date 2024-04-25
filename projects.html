@@ -20,8 +20,12 @@
     <!-- Importing fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,800;1,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 
 </head>
    
@@ -45,60 +49,39 @@
     <!-- Introduction -->
 
     <h1 class='title' id='writing'>Writing</h1>
-    <p class="above-collapse">News articles and data-driven stories written for the <i>Western Gazette</i>, Western University's student newspaper.</p>
-    <div class="container">
+    <p class="above-collapse"><i>News, profiles, and data-driven stories written for the <i>Western Gazette</i>, Western University's student newspaper.</i></p>
 
-        <button class="collapsible"><img src="images/name.png" height="150" width="200" /></button>
-        
-        <button class="collapsible2"><img src="images/gym.png" height="150" width="200" /></button>
+    <div>
+        <p><strong><a href='https://westerngazette.ca/features/what-650-syllabi-show-about-western-s-chatgpt-response/article_6df82ffe-cb5f-11ee-a47b-c7527dd39bf4.html'>What 650 syllabi show about Western's ChatGPT response</a></strong><br>
+            I used Python and the PyPDF libraries to search for generative AI related keywords in course syllabi and analyzed professor approaches and sentiment.
+        </p>
+        <p><strong><a href='https://westerngazette.ca/features/tracking-western-s-energy-use-and-what-it-means-for-campus-s-net-zero-goal/article_daded57c-88a8-11ee-aeb5-73e3acfd0fab.html'>Tracking Western's energy use — and what it means for campus's net-zero goal</a></strong><br>
+            I web-scraped, analyzed, and visualized data on energy use at Western University across different types of campus buildings.
+        </p>
+        <p><strong><a href='https://westerngazette.ca/culture/profiles/western-s-dead-bird-guy-brendon-samuels/article_87bdda58-7293-11ee-ae5d-cfc895f0ec3b.html'>Western's 'dead bird guy': Brendon Samuels</a></strong><br>
+            A profile on Western University PhD student and climate activist Brendon Samuels.
+        </p>
+        <p><strong><a href='https://westerngazette.ca/culture/student_life/it-s-devastating-sudanese-students-call-on-western-government-to-help-country-in-crisis/article_6b62831e-11b7-11ee-8319-73554bfb3d2c.html'>Sudanese students call on Western, government to help country in crisis</a></strong><br>
+            I spoke with Sudanese-Canadian students at Western University, who say the university and the nation need to do more to respond to Sudan's civil war.
+        </p>
 
-        <button class="collapsible3"><img src="images/unmasked.png" height="150" width="200" /></button>
-
+        <p><strong><a href='https://westerngazette.ca/news/using-data-to-plan-your-trip-to-the-rec-centre/article_a393ead8-70d7-11ed-8fbe-63379a003173.html'>Using data to plan your trip to the Rec Centre</a></strong><br> 
+            I wrote a Twitter scraper in Python using Tweepy and the Twitter API to write this data-driven story. I collected data on three months' worth of occupancy levels using the scraper and analyzed it for trends.
+        </p>
     </div>
 
 
-    <div class="content" id="text1">
-        <p><strong>How common is your name at Western?</strong> A data story I wrote for the <i>Western Gazette.</i> I used Python to clean, count, and organize data to determine the most popular first and last names at Western University.</p>
-        <p>Full story <a href='https://westerngazette.ca/news/how-common-is-your-name-at-western/article_d818e148-759e-11ed-bca8-e7b309759be2.html'>here</a>. </p>
-    </div>
+    <br><br>
+    <h1 class='title'>Coding</h1>
+    <p class="above-collapse"><i>Projects developed in Python, including bots and a web scraper.</i></p>
 
-    <div class="content" id="text2">
-        <p><strong>Using data to plan your trip to the Rec Centre.</strong> I wrote a Twitter scraper in Python using the Tweepy library and the Twitter API to write this data-driven story for the <i>Western Gazette.</i> I collected data on three months' worth of occupancy levels using the scraper and analyzed it for trends.</p>
-        <p>Full story <a href='https://westerngazette.ca/news/using-data-to-plan-your-trip-to-the-rec-centre/article_a393ead8-70d7-11ed-8fbe-63379a003173.html'>here</a>. </p>
-    </div>
-
-    <div class="content" id="text3">
-        <p><strong>Students not masking in classrooms as Western silent on post-Thanksgiving policy review.</strong> A news story I wrote for the <i>Western Gazette</i> about Western University's failure to enforce its mask mandate.</p>
-        <p>Full story <a href='https://westerngazette.ca/news/students-not-masking-in-classrooms-as-western-silent-on-post-thanksgiving-policy-review/article_7e4d1be2-4a7a-11ed-b0e8-e7604201c9e4.html'>here</a>. </p>
-    </div>
-
-
-
-    <h1 class='title' id='coding'>Coding</h1>
-    <p class="above-collapse">Projects developed in Python, including Twitter and Discord bots and a web scraper.</p>
-    <div class="container">
-
-        <button class="collapsible4"><img src="images/meep.png" height="150" width="200" /></button>
-        
-        <button class="collapsible5"><img src="images/poetrybot.png" height="150" width="200" /></button>
-
-        <button class="collapsible6"><img src="images/lhsc.png" height="150" width="200" /></button>
-    </div>
-
-
-    <div class="content" id="text4">
-        <p><strong>Meep Bot.</strong>  A Discord bot written in Python using the discord.py library to interface with the Discord API. The bot runs customizable timed study sessions for solo users or group study sessions using the Pomodoro Technique.</p>
-        <p>View the project page <a href='https://medialtemporal.github.io/MeepBot'>here</a>. </p>
-    </div>
-
-    <div class="content" id="text5">
-        <p><strong>Poetry Bot.</strong>  A Twitter bot that posts a line of poetry every three hours. Written in Python using the Tweepy library, with Github Actions used to automate posting.</p>
-        <p>View the bot <a href='https://twitter.com/PoetryPostBot'>here</a>, and the source code <a href='https://github.com/medialtemporal/poetry-bot'>here</a>.</p>
-    </div>
-
-    <div class="content" id="text6">
-        <p><strong>LHSC Wait Times Tracker. </strong> A web scraper that tracks the wait times at London Health Sciences Centre's adult emergency departments. Written in Python using the requests and BeautifulSoup libraries.</p>
-        <p>View the source code <a href='https://github.com/medialtemporal/lhsc-wait-times'>here</a>. </p>
+    <div>
+        <p><strong>Meep Bot.</strong>  A Discord bot written in Python using the discord.py library to interface with the Discord API. The bot runs customizable timed study sessions for solo users or group study sessions using the Pomodoro technique.
+        View the project page <a href='https://medialtemporal.github.io/MeepBot'>here</a>. </p>
+        <p><strong>Poetry Bot.</strong>  A Twitter bot that posts a line of poetry every three hours. Written in Python using the Tweepy library, with Github Actions used to automate posting.
+        View the bot <a href='https://twitter.com/PoetryPostBot'>here</a>, and the source code <a href='https://github.com/medialtemporal/poetry-bot'>here</a>.</p>    
+        <p><strong>LHSC Wait Times Tracker.</strong>  A web scraper that tracks the wait times at London Health Sciences Centre's adult emergency departments. Written in Python using the requests and BeautifulSoup libraries. 
+        View the source code <a href='https://github.com/medialtemporal/lhsc-wait-times'>here</a>.</p>
     </div>
 
 
@@ -106,9 +89,6 @@
     <div>
         <br><br><br><br>
     </div>
-
-    <!-- Linking to script file-->
-    <script src="script.js"></script>
 
 </body>
 
