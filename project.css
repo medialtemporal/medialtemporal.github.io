@@ -195,7 +195,7 @@ nav a, nav a:focus, nav a:active, nav a:hover, button:focus {
 /* For projects.html */
 
 #writing {
-    padding-top: 140px;
+    padding-top: 100px;
 }
 
 strong {
@@ -227,7 +227,7 @@ a:hover {
     .hello {
         padding-left: 25%;
         padding-right: 0%;
-        padding-top: 120px;
+        padding-top: 150px;
     }
 
     .links {
@@ -250,12 +250,8 @@ a:hover {
         font-size: 30px;
     }
 
-    .hello {
-        padding-top: 160px;
-    }
-
     #writing {
-        padding-top: 180px;
+        padding-top: 150px;
     }
 
 }
