@@ -210,3 +210,7 @@ a {
 a:hover {
     color: var(--selection);
 }
+
+.above-collapse {
+    padding-bottom: 20px;
+}
