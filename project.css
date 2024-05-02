@@ -268,6 +268,16 @@ a:hover {
         padding-left: 10%;
     }
 
+    h1 {
+        padding-right: 0%;
+    }
+
+
+    #pfp {
+        max-width: 2px;
+        max-height: 2px;
+   }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -317,5 +327,23 @@ a:hover {
 @media screen and (max-width: 500px) { 
     .navbar-name {
         padding-left: 27%;
+    }
+}
+
+@media screen and (max-width: 450px) { 
+    .navbar-name {
+        padding-left: 24%;
+    }
+}
+
+@media screen and (max-width: 400px) { 
+    .navbar-name {
+        padding-left: 22%;
+    }
+}
+
+@media screen and (max-width: 350px) { 
+    .navbar-name {
+        padding-left: 21%;
     }
 }
