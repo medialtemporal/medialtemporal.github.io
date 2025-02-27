@@ -21,16 +21,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script>
+        var i = 0;
+        var txt = "Hi there, I'm Sonia! It's nice to meet you.";
+        var speed = 75;
+        var wait = 10000;
+        
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("typewriter").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+          else {
+          setTimeout(permText, wait);
+          }
+        }
+          
+        function permText() {
+            document.getElementById("typewriter").innerHTML = "Sonia Persaud";
+        }
+        </script>
 
 </head>
    
-<body>
+<body onload="typeWriter()">
 
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar 
     <nav>
         <div class="navbar">
             <a class="navbar-name" href="#top"><h2 id="top">Sonia Persaud</h2></a>
@@ -44,68 +63,79 @@
             </ul>
         </div>
     </nav>
+    -->
   
     <!-- Introduction -->
-    <div class="hello" id='hi'>
-        <h1>Hi there, I'm Sonia! It's nice to meet you.</h1>
-        <img border="0" src="images/sonia2.png" width="130" height="130" id="pfp">
+    <div class="hello">
+        <h1 id="typewriter"></h1>
+        <!-- <img border="0" src="images/sonia2.png" width="130" height="130" id="pfp"> -->
     </div>
 
-    <!-- About Me-->
+    <!-- About-->
     <div>
         <h2 class="title" id="about">About me</h2>
         <p class='description'>
-            I'm a first-year medical student at Queen's University based in Kingston and Toronto, Ontario. I graduated from Western University in 2024 with a B.Sc., where I completed an Honours Specialization in Neuroscience.
+            I'm a first-year medical student at Queen's University and a freelance journalist based in Kingston and Toronto, Ontario. I graduated from Western University in 2024 with an Honours B.Sc. in Neuroscience.
             <br><br>
-            During my time at Western, I edited the News and Features sections for the student newspaper, the <i>Western Gazette</i>. In my final year at the <i>Gazette</i>, I was one of three Canadian student journalists shortlisted for the Canadian University Press Student Journalist of the Year award, recognizing all-round excellence in the newsroom.
+            During my time at Western, I edited the News and Features sections for the student newspaper, the <i>Western Gazette</i>. I've received awards from the Canadian Association of Journalists (CAJ) and the Canadian University Press (CUP) for my work in data journalism and feature writing. In my final year at the <i>Gazette</i>, I was one of three Canadian student journalists shortlisted for CUP's Student Journalist of the Year award, recognizing all-round excellence in the newsroom.
             <br><br>
-            My previous work experience is in neuroscience and mental health research. I've worked as a summer research student at Women's College Hospital and the Toronto Rehabilitation Institute, and as an intern at the youth mental health non-profit Jack.org.
+            My previous work experience is in neuroscience and mental health research. I've worked as a summer research student at the Trauma Research Program at Women's College Hospital and the Cognitive Neurorehabilitation Lab at the Toronto Rehabilitation Institute, and as an intern at the youth mental health non-profit Jack.org.
             <br><br>
             I'd love to connect; please reach out at one of the links below!
-            <br><br>
+            <br>
         </p>
         <div class='contact'>
-            <a href="https://github.com/medialtemporal/"><img src="images/github.png" onmouseover="this.src='images/github-hover.png'" onmouseout="this.src='images/github.png'" height='25em' width='25em' /></a>
-            <a href="https://twitter.com/soniarpersaud"><img src="images/twitter.png" onmouseover="this.src='images/twitter-hover.png'" onmouseout="this.src='images/twitter.png'" height='25em' width='25em' /></a>
-            <a class='email' href="mailto:spersa46@uwo.ca" style="text-decoration: none;">spersaud@qmed.ca</a>
-
+            <a href="https://github.com/medialtemporal/"><img src="images/github.png" onmouseover="this.src='images/github.png'" onmouseout="this.src='images/github.png'" height='25em' width='25em' /></a>
+            <a href="https://bsky.app/profile/soniapersaud.bsky.social"><img src="images/bsky.png" onmouseover="this.src='images/bsky.png'" onmouseout="this.src='images/bsky.png'" height='25em' width='30em' /></a>
+            <strong><a class='email' href="mailto:spersaud@qmed.ca" style="text-decoration: none;">spersaud@qmed.ca</a></strong>
         </div>
+        <br>
     </div>
 
-    <!-- Skills -->
+    <!-- Writing -->
     <div>
-        <h2 class='title' id='skills'>Skills</h2>
-        <p>
-            <strong>Python</strong> and data science/visualization libraries (pandas, numpy, matplotlib, seaborn).<br><br>
-            <strong>R</strong> and tidyverse packages (dplyr, tidyr, ggplot2).<br><br>
-            I'm also proficient at coding in <strong>MATLAB</strong>, <strong>Java</strong>, <strong>HTML/CSS</strong>, and <strong>JavaScript</strong>.
+        <h2 class='title' id='work'>Writing</h2>
+        <p><i>A selection of news, profiles, and data-driven stories written for the <i>Western Gazette</i>, Western University's student newspaper.</i></p>
+    <div>
+        <p><strong><a href='https://westerngazette.ca/features/what-650-syllabi-show-about-western-s-chatgpt-response/article_6df82ffe-cb5f-11ee-a47b-c7527dd39bf4.html'>What 650 syllabi show about Western's ChatGPT response</a></strong><br>
+            I used Python to search for generative AI related keywords in over 650 course syllabi and analyzed professor approaches and sentiment.
+        </p>
+        <p><strong><a href='https://westerngazette.ca/features/beyond-the-blueprint-bridging-the-gender-gap-in-western-engineering/article_52c6e590-8fc8-11ee-a13e-5fa5cac05ad4.html'>Bridging the gender gap in Western Engineering</a></strong><br>
+            A feature on the gender gap in the Faculty of Engineering at Western University, where just 23 per cent of students identify as women.
+        </p>
+        <p><strong><a href='https://westerngazette.ca/culture/profiles/western-s-dead-bird-guy-brendon-samuels/article_87bdda58-7293-11ee-ae5d-cfc895f0ec3b.html'>Western's 'dead bird guy': Brendon Samuels</a></strong><br>
+            A profile of Western University PhD candidate and climate activist Brendon Samuels.
+        </p>
+        <p><strong><a href='https://westerngazette.ca/culture/student_life/it-s-devastating-sudanese-students-call-on-western-government-to-help-country-in-crisis/article_6b62831e-11b7-11ee-8319-73554bfb3d2c.html'>Sudanese students call on Western, government to help country in crisis</a></strong><br>
+            I spoke with Sudanese-Canadian students at Western University, who say the university and the nation need to do more to respond to Sudan's civil war.
+        </p>
+        <p>All of my work for the <i>Gazette</i> can be found <strong><a href='https://westerngazette.ca/users/profile/Sonia%20Persaud'>here</a></strong>.
         </p>
     </div>
-
-    <!--Awards & Honours -->
+    </div>
+    
+    <!--Awards -->
     <div>
         <h2 class='title' id='awards'>Grants and awards</h2>
         <p>
-            <strong>Investintech - CAJ Data Journalism Scholarship</strong><br><i class='date'>May 2024</i><br>
+            <strong>John H. McDonald Award for Feature Writing&nbsp;&nbsp;&nbsp;</strong><i class='date'>February 2025</i><br>
+            Awarded by the Canadian University Press for excellence in feature writing.
+            <br><br>
+            <strong>John H. McDonald Award for Digital Storytelling&nbsp;&nbsp;&nbsp;</strong><i class='date'>February 2025</i><br>
+            Awarded by the Canadian University Press for excellence in digital storytelling (with Jessica Kim). 
+            <br><br>
+            <strong>Investintech - CAJ Data Journalism Scholarship&nbsp;&nbsp;&nbsp;</strong><i class='date'>May 2024</i><br>
             Awarded by Investintech, in partnership with the Canadian Association of Journalists, for demonstrating potential in journalism work and a solid foundation of technical data skills.
             <br><br>
-            <strong>[Shortlist] John H. McDonald Award for Student Journalist of the Year</strong><br><i class='date'>February 2024</i><br>
-            Named as one of three students shortlisted for the Canadian University Press Student Journalist of the Year award, recognizing exemplary work in reporting or editorial capacities.
+            <strong>John H. McDonald Award for Data Journalism&nbsp;&nbsp;&nbsp;</strong><i class='date'>February 2023</i><br>
+            Awarded by the Canadian University Press for excellence in data journalism.
             <br><br>
-            <strong>John H. McDonald Award for Data Journalism</strong><br><i class='date'>February 2023</i><br>
-            Awarded by the Canadian University Press for excellence in student data journalism.
+            <strong>Branch Out Neurological Foundation Summer Undergraduate Studentship&nbsp;&nbsp;&nbsp;</strong><i class='date'>February 2021</i><br>
+            Recipient of a competitive undergraduate research grant to conduct summer research at the Toronto Rehabilitation Institute.
             <br><br>
-            <strong>Branch Out Neurological Foundation Summer Undergraduate Studentship</strong><br><i class='date'>February 2021</i><br>
-            Recipient of a competitive undergraduate research grant to conduct summer research in the lab of Dr. Robin Green at the Toronto Rehabilitation Institute.
-            <br><br>
-            <strong>UHN Medical Staff Association Volunteer Educational Award</strong><br><i class='date'>June 2020</i><br>
+            <strong>UHN Medical Staff Association Volunteer Educational Award&nbsp;&nbsp;&nbsp;</strong><i class='date'>June 2020</i><br>
             Scholarship awarded for demonstrating an exceptional commitment to volunteering at the University Health Network, along with high academic performance and extracurricular contributions.
         </p>
-    </div>
-
-    <div>
-        <!-- empty-->
-        <br><br><br><br><br>
     </div>
 
 </body>
